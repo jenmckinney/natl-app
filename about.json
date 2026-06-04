@@ -1,9 +1,9 @@
 {
-  "name": "Pavilion Wizard",
+  "name": "National Application Form Theme",
   "about_url": null,
-  "license_url": "https://github.com/paviliondev/pavilion-wizard/blob/master/LICENSE.txt",
-  "authors": "Angus McLeod",
-  "theme_version": "1.0",
+  "license_url": "https://github.com/jenmckinney/natl-app/blob/master/LICENSE.txt",
+  "authors": "Jen M",
+  "theme_version": "0.1",
   "assets": {
     "background": "assets/background.png"
   },
