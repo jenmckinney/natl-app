@@ -48,13 +48,14 @@
 body.custom-wizard {
   background-image: url($background);
   background-size: cover;
+  font-family: "styreneb";
   
   .wizard-field {
     margin-bottom: 0.5em;
   }
 
   code {
-    font-family: unset;
+    font-family: "b612mono";
   }
 }
 
