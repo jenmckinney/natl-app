@@ -1,3 +1,50 @@
+@font-face {
+  font-family: styreneb;
+  src: url($styreneb-regular) format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: styreneb;
+  src: url($styreneb-bold) format("woff2");
+  font-weight: bold;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: styreneb;
+  src: url($styreneb-black) format("woff2");
+  font-weight: bolder;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "b612mono", monospace;
+  font-weight: 400;
+  src: url(b612mono-regular) format("ttf");
+}
+
+@font-face {
+  font-family: "b612mono", monospace;
+  font-weight: bold;
+  src: url($b612mono-bold) format("ttf");
+}
+
+@font-face {
+  font-family: "b612mono", monospace;
+  font-weight: 400;
+  font-style: italic;
+  src: url($b612mono-italic) format("ttf");
+}
+
+@font-face {
+  font-family: "b612mono", monospace;
+  font-weight: 700;
+  font-style: italic;
+  src: url($b612mono-bolditalic) format("ttf");
+}
+
+
 body.custom-wizard {
   background-image: url($background);
   background-size: cover;

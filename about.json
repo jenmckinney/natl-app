@@ -5,7 +5,14 @@
   "authors": "Jen M",
   "theme_version": "0.1",
   "assets": {
-    "background": "assets/background.png"
+    "background": "assets/background.png",
+    "b612mono-bold": "assets/fonts/b612mono-bold.ttf",
+    "b612mono-bolditalic": "assets/fonts/b612mono-bolditalic.ttf",
+    "b612mono-italic": "assets/fonts/b612mono-italic.ttf",
+    "b612mono-regular": "assets/fonts/b612mono-regular.ttf",
+    "styreneb-black": "assets/fonts/styreneb-black.woff2",
+    "styreneb-bold": "assets/fonts/styreneb-bold.woff2",
+    "styreneb-regular": "assets/fonts/styreneb-regular.woff2"
   },
   "color_schemes": {
   },
