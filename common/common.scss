@@ -163,6 +163,25 @@ button.btn.wizard-btn {
   background-color: #231F20 !important;
 }
 
+.custom-wizard .body-length {
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+  width: 100% !important;
+  
+  .field-required-message {
+    text-align: left !important;
+    color: var(--danger, #e45735) !important; 
+    font-size: var(--font-down-1) !important;
+    font-weight: bold !important;
+  }
+
+  .char-counter { 
+    margin-left: auto !important; 
+    text-align: right !important;
+  }
+}
+
 .wizard-progress {
   display: none;
 }
