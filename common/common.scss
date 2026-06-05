@@ -54,11 +54,59 @@ body.custom-wizard {
   
   .wizard-field {
     margin-bottom: 0.5em;
+
+    .field-label {
+      font-family: "styreneb";
+      font-weight: 400 !important;
+      color: #231f20 !important;
+      margin-bottom: 2px !important;
+    }
+
+    .field-description {
+      font-family: "styreneb";
+      font-weight: bold !important;
+      color: #231f20 !important;
+    }
   }
 
   code {
     font-family: "b612mono";
     color: #231f20
+  }
+
+  .checkbox-field {
+  display: flex !important;
+  flex-direction: row !important;
+  flex-wrap: wrap !important;
+  align-items: flex-start !important;
+  padding: 10px 0 !important;
+
+    .input-area {
+      order: 0 !important;
+      margin: 4px 12px 0 0 !important;
+    }
+
+    & > label.field-label {
+      order: 1 !important;
+      flex-basis: calc(100% - 40px) !important;
+      text-align: left !important;
+      font-weight: bold !important;
+    }
+
+    & > .field-description {
+      order: 2 !important;
+      flex-basis: calc(100% - 40px) !important;
+      margin-left: 36px !important;
+      margin-top: 4px !important;
+      text-align: left !important;
+    }
+
+    .input-area::after {
+      order: 3 !important;
+      flex-basis: 100% !important;
+      margin-left: 36px !important;
+      margin-top: 8px !important;
+    }
   }
 }
 
@@ -67,19 +115,6 @@ body.custom-wizard {
   text-decoration: none;
   font-family: "styreneb";
   color: #231F20;
-}
-
-.custom-wizard .wizard-field .field-description {
-  font-family: "styreneb";
-  font-weight: bold !important;
-  color: #231f20 !important;
-}
-
-.custom-wizard .wizard-field .field-label {
-  font-family: "styreneb";
-  font-weight: 400 !important;
-  color: #231f20 !important;
-  margin-bottom: 2px !important;
 }
 
 .custom-wizard .wizard-step-description {
@@ -181,40 +216,5 @@ button.btn.wizard-btn {
     font-size: var(--font-down-1, 0.85em);
     font-weight: bold;
     text-align: left;
-  }
-}
-
-.custom-wizard.checkbox-field {
-  display: flex !important;
-  flex-direction: row !important;
-  flex-wrap: wrap !important;
-  align-items: flex-start !important;
-  padding: 10px 0 !important;
-
-  .input-area {
-    order: 0 !important;
-    margin: 4px 12px 0 0 !important;
-  }
-
-  & > label.field-label {
-    order: 1 !important;
-    flex-basis: calc(100% - 40px) !important;
-    text-align: left !important;
-    font-weight: bold !important;
-  }
-
-  & > .field-description {
-    order: 2 !important;
-    flex-basis: calc(100% - 40px) !important;
-    margin-left: 36px !important;
-    margin-top: 4px !important;
-    text-align: left !important;
-  }
-
-  .input-area::after {
-    order: 3 !important;
-    flex-basis: 100% !important;
-    margin-left: 36px !important;
-    margin-top: 8px !important;
   }
 }
