@@ -8,13 +8,12 @@ export default apiInitializer("1.8.0", (api) => {
       this._super(...arguments);
 
       const isRequired = this.get("field.required");
-      const bodyLength = this.element?.querySelector(".body-length");
-
-      if (bodyLength) {
+      
+      if (this.element) {
         if (isRequired) {
-          bodyLength.setAttribute("data-field-mandatory", "true");
+          this.element.setAttribute("data-field-mandatory", "true");
         } else {
-          bodyLength.removeAttribute("data-field-mandatory");
+          this.element.removeAttribute("data-field-mandatory");
         }
       }
     }
