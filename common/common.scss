@@ -171,19 +171,12 @@ button.btn.wizard-btn {
   display: none;
 }
 
-.wizard-field:has(input[required]) .field-description,
-.wizard-field:has(textarea[required]) .field-description,
-.wizard-field:has(.required) .field-description {
-  
-  &::after {
-    content: "This field is required";
-    display: block;
-    margin-top: 0.5em;
-    color: var(--danger, #e45735);
-    font-size: var(--font-down-1, 0.85em);
-    font-weight: bold;
-    text-align: left;
-  }
+.custom-wizard .field-required-message {
+  color: var(--danger, #e45735);
+  font-size: var(--font-down-1, 0.85em);
+  font-weight: bold;
+  margin-top: 0.25em;
+  text-align: left;
 }
 
 input[type="checkbox"] {
