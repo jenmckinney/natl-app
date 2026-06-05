@@ -52,7 +52,7 @@ body.custom-wizard {
   font-family: "styreneb";
   color: #231F20;
 
-  .wizard-field[data-field-mandatory="true"] {
+  .wizard-field[data-field-mandatory="true"]:not(.checkbox-field) {
   
     .input-area::after {
       content: "This field is required";
