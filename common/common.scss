@@ -91,6 +91,10 @@ body.custom-wizard {
   border-radius: 0.5rem;
 }
 
+.custom-wizard .wizard-column-contents {
+  background-color: #ffffff;
+}
+
 input[type="checkbox"] {
   margin-bottom: 0;
   margin-right: 0.75em;
