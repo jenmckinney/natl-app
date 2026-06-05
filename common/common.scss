@@ -187,6 +187,31 @@ button.btn.wizard-btn {
   }
 }
 
+.wizard-field.required,
+.wizard-field[data-required="true"] {
+  
+  .body-length {
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center;
+    width: 100%;
+
+    &::before {
+      content: "This field is required";
+      text-align: left;
+      color: var(--danger, #e45735);
+      font-size: var(--font-down-1);
+      font-weight: bold;
+      visibility: visible;
+    }
+    
+    span, div {
+      margin-left: auto;
+      text-align: right;
+    }
+  }
+}
+
 .wizard-progress {
   display: none;
 }
