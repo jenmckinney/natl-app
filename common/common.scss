@@ -101,7 +101,7 @@ body.custom-wizard {
   background-color: #EBEBEA !important;
 }
 
-.ember-text-area {
+.custom-wizard .ember-text-area {
   background-color: #f5f5f5 !important;
   box-shadow: 0 15px 30px 0 rgba(0,0,0,0.11),
     0 5px 15px 0 rgba(0,0,0,0.08) !important;
@@ -109,7 +109,7 @@ body.custom-wizard {
   border-color: #f5f5f5 !important;
 }
 
-.ember-text-field {
+.custom-wizard .ember-text-field {
   background-color: #f5f5f5 !important;
   box-shadow: 0 15px 30px 0 rgba(0,0,0,0.11),
     0 5px 15px 0 rgba(0,0,0,0.08) !important;
@@ -128,7 +128,7 @@ button.btn.wizard-btn.toggle-preview {
   font-weight: bold !important;
 }
 
-.d-editor-button-bar {
+.custom-wizard .d-editor-button-bar {
   border-radius: 0.5rem !important;
   background-color: #231F20 !important;
 }
