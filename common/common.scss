@@ -184,31 +184,37 @@ button.btn.wizard-btn {
   }
 }
 
-.custom-wizard .checkbox-field {
-  
+.custom-wizard.checkbox-field {
+  display: flex !important;
+  flex-direction: row !important;
+  flex-wrap: wrap !important;
+  align-items: flex-start !important;
+  padding: 10px 0 !important;
+
   .input-area {
-    display: flex !important;
-    flex-direction: row !important;
-    flex-wrap: wrap !important;
-    align-items: flex-start !important;
-    gap: 12px !important;
-    width: 100% !important;
+    order: 0 !important;
+    margin: 4px 12px 0 0 !important;
   }
 
-  .wizard-field-label {
-    display: flex !important;
-    flex-direction: column !important;
-    align-items: flex-start !important;
-    gap: 4px !important;
-    order: 2 !important;
-  }
-
-  input[type="checkbox"] {
+  & > label.field-label {
     order: 1 !important;
+    flex-basis: calc(100% - 40px) !important;
+    text-align: left !important;
+    font-weight: bold !important;
+  }
+
+  & > .field-description {
+    order: 2 !important;
+    flex-basis: calc(100% - 40px) !important;
+    margin-left: 36px !important;
     margin-top: 4px !important;
+    text-align: left !important;
   }
 
   .input-area::after {
-    width: 100% !important;
+    order: 3 !important;
+    flex-basis: 100% !important;
+    margin-left: 36px !important;
+    margin-top: 8px !important;
   }
 }
