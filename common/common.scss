@@ -184,7 +184,31 @@ button.btn.wizard-btn {
   }
 }
 
-input[type="checkbox"] {
-  margin-bottom: 0;
-  margin-right: 0.75em;
+.custom-wizard .checkbox-field {
+  
+  .input-area {
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: wrap !important;
+    align-items: flex-start !important;
+    gap: 12px !important;
+    width: 100% !important;
+  }
+
+  .wizard-field-label {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 4px !important;
+    order: 2 !important;
+  }
+
+  input[type="checkbox"] {
+    order: 1 !important;
+    margin-top: 4px !important;
+  }
+
+  .input-area::after {
+    width: 100% !important;
+  }
 }
