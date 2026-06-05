@@ -88,43 +88,48 @@ body.custom-wizard {
   }
 
   .checkbox-field {
-    display: flex !important;
-    flex-direction: row !important;
-    flex-wrap: wrap !important;
-    align-items: flex-start !important;
+    display: grid !important;
+    grid-template-columns: auto 1fr !important;
+    align-items: center !important;
+    column-gap: 12px !important;
+    row-gap: 2px !important;
     padding: 10px 0 !important;
 
     .input-area {
-      order: 0 !important;
-      margin: 4px 12px 0 0 !important;
+      grid-column: 1 !important;
+      grid-row: 1 / span 2 !important;
+      align-self: center !important;
+      margin: 0 !important;
+      order: unset !important;
     }
 
     & > label.field-label {
-      order: 1 !important;
-      flex-basis: calc(100% - 40px) !important;
+      grid-column: 2 !important;
+      grid-row: 1 !important;
       text-align: left !important;
-      font-weight: bold !important;
+      font-weight: 400 !important;
+      margin: 0 !important;
+      order: unset !important;
     }
 
     & > .field-description {
-      order: 2 !important;
-      flex-basis: calc(100% - 40px) !important;
-      margin-left: 36px !important;
-      margin-top: 4px !important;
+      grid-column: 2 !important;
+      grid-row: 2 !important;
       text-align: left !important;
+      font-weight: bold !important;
+      margin: 0 !important;
+      order: unset !important;
     }
 
     &[data-field-mandatory="true"]::after {
-    content: "This field is required";
-    display: block !important;
-    order: 3 !important;
-    flex-basis: 100% !important;
-    margin-left: 36px !important;
-    margin-top: 8px !important;
-    color: var(--danger, #e45735);
-    font-size: var(--font-down-1, 0.85em);
-    font-weight: bold;
-    text-align: left;
+      content: "This field is required";
+      display: block !important;
+      grid-column: 1 / span 2 !important;
+      margin-top: 6px !important;
+      color: var(--danger, #e45735);
+      font-size: var(--font-down-1, 0.85em);
+      font-weight: bold;
+      text-align: left;
     }
   }
 }
