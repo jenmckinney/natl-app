@@ -68,13 +68,13 @@ body.custom-wizard {
   color: #231F20;
 }
 
-.custom-wizard .field-description {
+.custom-wizard .wizard-field .field-description {
   font-family: "styreneb";
   font-weight: 400 !important;
   color: #231f20 !important;
 }
 
-.custom-wizard .field-label {
+.custom-wizard .wizard-field .field-label {
   font-family: "styreneb";
   font-weight: bold !important;
   color: #231f20 !important;
@@ -100,7 +100,7 @@ body.custom-wizard {
   background-color: #EBEBEA !important;
 }
 
-.custom-wizard .input-area {
+.ember-text-area {
   background-color: #f5f5f5 !important;
   box-shadow: 0 15px 30px 0 rgba(0,0,0,0.11),
     0 5px 15px 0 rgba(0,0,0,0.08) !important;
@@ -109,11 +109,11 @@ body.custom-wizard {
 }
 
 button.btn.wizard-btn.toggle-preview {
-  background-color: #a5a5a1 !important;
+  background-color: #231f20 !important;
   box-shadow: 0 15px 30px 0 rgba(0,0,0,0.11),
     0 5px 15px 0 rgba(0,0,0,0.08) !important;
   border-radius: 0.5rem !important;
-  border-color: #a5a5a1 !important;
+  border-color: #231F20 !important;
 }
 
 .wizard-progress {
