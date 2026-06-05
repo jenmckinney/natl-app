@@ -51,6 +51,19 @@ body.custom-wizard {
   background-size: cover;
   font-family: "styreneb";
   color: #231F20;
+
+  .wizard-field[data-field-mandatory="true"] {
+  
+    .input-area::after {
+      content: "This field is required";
+      display: block;
+      margin-top: 0.5em;
+      color: var(--danger, #e45735);
+      font-size: var(--font-down-1, 0.85em);
+      font-weight: bold;
+      text-align: left;
+    }
+  }
   
   .wizard-field {
     margin-bottom: 0.5em;
@@ -75,11 +88,11 @@ body.custom-wizard {
   }
 
   .checkbox-field {
-  display: flex !important;
-  flex-direction: row !important;
-  flex-wrap: wrap !important;
-  align-items: flex-start !important;
-  padding: 10px 0 !important;
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: wrap !important;
+    align-items: flex-start !important;
+    padding: 10px 0 !important;
 
     .input-area {
       order: 0 !important;
@@ -101,11 +114,17 @@ body.custom-wizard {
       text-align: left !important;
     }
 
-    .input-area::after {
-      order: 3 !important;
-      flex-basis: 100% !important;
-      margin-left: 36px !important;
-      margin-top: 8px !important;
+    &[data-field-mandatory="true"]::after {
+    content: "This field is required";
+    display: block !important;
+    order: 3 !important;
+    flex-basis: 100% !important;
+    margin-left: 36px !important;
+    margin-top: 8px !important;
+    color: var(--danger, #e45735);
+    font-size: var(--font-down-1, 0.85em);
+    font-weight: bold;
+    text-align: left;
     }
   }
 }
@@ -204,17 +223,4 @@ button.btn.wizard-btn {
 
 .wizard-footer {
   display: none;
-}
-
-.wizard-field[data-field-mandatory="true"] {
-  
-  .input-area::after {
-    content: "This field is required";
-    display: block;
-    margin-top: 0.5em;
-    color: var(--danger, #e45735);
-    font-size: var(--font-down-1, 0.85em);
-    font-weight: bold;
-    text-align: left;
-  }
 }
