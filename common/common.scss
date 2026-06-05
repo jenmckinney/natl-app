@@ -180,6 +180,11 @@ button.btn.wizard-btn {
     margin-left: auto !important; 
     text-align: right !important;
   }
+
+  span:not(.field-required-message) {
+    margin-left: auto !important;
+    text-align: right !important;
+  }
 }
 
 .wizard-progress {
