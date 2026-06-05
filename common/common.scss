@@ -175,12 +175,12 @@ button.btn.wizard-btn {
   }
 }
 
-.custom-wizard .body-length[data-field-mandatory="true"] {
-  &::before {
+.wizard-field.is-required-field {
+  .body-length::before {
     content: "This field is required";
     display: inline-block;
     text-align: left;
-    color: var(--danger, #e45735); 
+    color: var(--danger, #e45735);
     font-size: var(--font-down-1, 0.85em);
     font-weight: bold;
   }
