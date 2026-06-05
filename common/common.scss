@@ -1,6 +1,7 @@
 @font-face {
   font-family: styreneb;
   src: url($styreneb-regular) format("woff2");
+  font-weight: 400;
   font-display: swap;
 }
 
@@ -49,6 +50,7 @@ body.custom-wizard {
   background-image: url($background);
   background-size: cover;
   font-family: "styreneb";
+  color: #231F20;
   
   .wizard-field {
     margin-bottom: 0.5em;
@@ -60,12 +62,29 @@ body.custom-wizard {
 }
 
 .custom-wizard .wizard-step-title p {
-  background-image: linear-gradient(180deg, transparent 95%, #08c 0);
-  background-repeat: no-repeat;
-  background-color: initial;
   padding: 0px;
-  background-size: 100% 100%;
   text-decoration: none;
+  font-family: "styreneb";
+  color: #231F20;
+}
+
+.custom-wizard .field-description {
+  font-family: "styreneb";
+  font-weight: bold;
+}
+
+.custom-wizard .field-label {
+  font-family: "styreneb";
+  font-weight: bolder;
+}
+
+.custom-wizard .wizard-step-description {
+  font-family: "styreneb";
+  font-weight: bolder;
+}
+
+.custom-wizard .wizard-column-contents {
+  background-color: #F5FFFB;
 }
 
 input[type="checkbox"] {
