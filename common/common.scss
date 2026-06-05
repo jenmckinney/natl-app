@@ -175,15 +175,15 @@ button.btn.wizard-btn {
   }
 }
 
-.wizard-field:has(input[required]) .body-length::before,
-.wizard-field:has(textarea[required]) .body-length::before,
-.wizard-field:has(.required) .body-length::before {
-  content: "This field is required";
-  display: inline-block;
-  text-align: left;
-  color: var(--danger, #e45735);
-  font-size: var(--font-down-1, 0.85em);
-  font-weight: bold;
+.custom-wizard .body-length[data-field-mandatory="true"] {
+  &::before {
+    content: "This field is required";
+    display: inline-block;
+    text-align: left;
+    color: var(--danger, #e45735); 
+    font-size: var(--font-down-1, 0.85em);
+    font-weight: bold;
+  }
 }
 
 .wizard-progress {
