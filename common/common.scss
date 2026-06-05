@@ -70,17 +70,21 @@ body.custom-wizard {
 
 .custom-wizard .field-description {
   font-family: "styreneb";
-  font-weight: bold;
+  font-weight: 400 !important;
+  color: #231f20 !important;
 }
 
 .custom-wizard .field-label {
   font-family: "styreneb";
-  font-weight: bolder;
+  font-weight: bold !important;
+  color: #231f20 !important;
+  margin-bottom: 2px !important;
 }
 
 .custom-wizard .wizard-step-description {
   font-family: "styreneb";
-  font-weight: bolder;
+  font-weight: bolder !important;
+  font-size: 1.5em !important;
 }
 
 .custom-wizard .wizard-column {
@@ -94,6 +98,30 @@ body.custom-wizard {
 
 .custom-wizard .wizard-column-contents {
   background-color: #EBEBEA !important;
+}
+
+.custom-wizard .input-area {
+  background-color: #f5f5f5 !important;
+  box-shadow: 0 15px 30px 0 rgba(0,0,0,0.11),
+    0 5px 15px 0 rgba(0,0,0,0.08) !important;
+  border-radius: 0.5rem !important;
+  border-color: #f5f5f5 !important;
+}
+
+button.btn.wizard-btn.toggle-preview {
+  background-color: #a5a5a1 !important;
+  box-shadow: 0 15px 30px 0 rgba(0,0,0,0.11),
+    0 5px 15px 0 rgba(0,0,0,0.08) !important;
+  border-radius: 0.5rem !important;
+  border-color: #a5a5a1 !important;
+}
+
+.wizard-progress {
+  display: none;
+}
+
+.wizard-footer {
+  display: none;
 }
 
 input[type="checkbox"] {
