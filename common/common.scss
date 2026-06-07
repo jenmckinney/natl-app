@@ -22,14 +22,14 @@
 @font-face {
   font-family: b612mono;
   font-weight: 400;
-  src: url($b612mono-regular) format("ttf");
+  src: url($b612mono-regular) format("woff2");
   font-display: swap;
 }
 
 @font-face {
   font-family: b612mono;
   font-weight: bold;
-  src: url($b612mono-bold) format("ttf");
+  src: url($b612mono-bold) format("woff2");
   font-display: swap;
 }
 
@@ -37,15 +37,15 @@
   font-family: b612mono;
   font-weight: 400;
   font-style: italic;
-  src: url($b612mono-italic) format("ttf");
+  src: url($b612mono-italic) format("woff2");
   font-display: swap;
 }
 
 @font-face {
   font-family: b612mono;
-  font-weight: 700;
+  font-weight: bold;
   font-style: italic;
-  src: url($b612mono-bolditalic) format("ttf");
+  src: url($b612mono-bolditalic) format("woff2");
   font-display: swap;
 }
 
