@@ -86,11 +86,6 @@ body.custom-wizard {
     }
   }
 
-  code {
-    font-family: "b612mono";
-    color: #231f20
-  }
-
   .checkbox-field {
     display: grid !important;
     grid-template-columns: auto 1fr !important;
@@ -172,6 +167,7 @@ body.custom-wizard {
   border-color: #f5f5f5 !important;
   color: #231f20 !important;
   font-family: "b612mono" !important;
+  font-weight: 400;
 }
 
 .custom-wizard .ember-text-field {
