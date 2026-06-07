@@ -176,10 +176,9 @@ body.custom-wizard {
     0 5px 15px 0 rgba(0,0,0,0.08) !important;
   border-radius: 0.5rem !important;
   border-color: #f5f5f5 !important;
-  font-weight: bold !important;
   color: #231f20 !important;
   font-family: "b612mono" !important;
-  font-weight: 400;
+  font-weight: 400 !important;
 }
 
 .custom-wizard .select-kit {
@@ -190,6 +189,27 @@ body.custom-wizard {
   border-color: #f5f5f5 !important;
   font-weight: bold !important;
   color: #231f20 !important;
+}
+
+.custom-wizard .select-kit-collection {
+  color: #231f20 !important;
+  font-family: "b612mono" !important;
+  font-weight: 400 !important;
+  background-color: #f5f5f5 !important;
+}
+
+.custom-wizard .select-kit-body {
+  color: #231f20 !important;
+  font-family: "b612mono" !important;
+  font-weight: 400 !important;
+  background-color: #f5f5f5 !important;
+}
+
+.custom-wizard .fk-d-menu {
+  color: #231f20 !important;
+  font-family: "b612mono" !important;
+  font-weight: 400 !important;
+  background-color: #f5f5f5 !important;
 }
 
 .custom-wizard .multi-select-header {
