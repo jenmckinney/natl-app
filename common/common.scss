@@ -20,26 +20,26 @@
 }
 
 @font-face {
-  font-family: "b612mono", monospace;
+  font-family: b612mono;
   font-weight: 400;
   src: url(b612mono-regular) format("ttf");
 }
 
 @font-face {
-  font-family: "b612mono", monospace;
+  font-family: b612mono;
   font-weight: bold;
   src: url($b612mono-bold) format("ttf");
 }
 
 @font-face {
-  font-family: "b612mono", monospace;
+  font-family: b612mono;
   font-weight: 400;
   font-style: italic;
   src: url($b612mono-italic) format("ttf");
 }
 
 @font-face {
-  font-family: "b612mono", monospace;
+  font-family: b612mono;
   font-weight: 700;
   font-style: italic;
   src: url($b612mono-bolditalic) format("ttf");
